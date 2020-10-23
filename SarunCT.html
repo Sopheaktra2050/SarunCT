@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+        <title>Chatapp</title>
+<style>
+    body {
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTdkZgWaFd4rBnGCr84-H0qQ1I1hWmKm9q7Lw&usqp=CAU");
+    
+}
+#rv{
+position:absolute;
+    top:180px;
+    
+}
+#rv1{
+position:absolute;
+    top:120px;
+    
+}
+#options{
+    background-color:black;
+    position:absolute ;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+}
+#wel{
+    position:absolute;
+    top:5px;
+    left:40px;
+    color:#cfed09;
+    font-size:30px;
+    background-color:transparent;
+    font-family: 'Bubblegum Sans', cursive;
+
+}
+#join{
+    background-color:black;
+    position:absolute ;
+    left:8px;
+    top:70px;
+    height:200px;
+    width:330px;
+    border-radius:10px;
+    border-color:#9ecaed;
+    outline-color:transparent;
+    color:#9ecaed;
+    font-size:30px;
+    font-family: 'Bubblegum Sans', cursive;
+
+
+}
+#gen{
+    background-color:black;
+    position:absolute ;
+    left:120px;
+    top:360px;
+    height:40px;
+    width:90px;
+    border-radius:10px;
+    border-color:#9ecaed;
+    outline-color:transparent;
+    color:#9ecaed;
+    font-size:10px;
+    font-family: 'Bubblegum Sans', cursive;
+
+
+}
+#titlegr{
+    background-color:#9ecaed;
+    position:absolute;
+    left:0px;
+    top:0px;
+    height:60px;
+    width:99%;
+    border-color:#9ecaed;
+    color:black;
+    font-size:20px;
+    font-family: 'Bubblegum Sans', cursive;
+    display:none;
+
+}
+#titlegr2{
+    background-color:#9ecaed;
+    position:absolute;
+    left:0px;
+    bottom:0px;
+    height:40px;
+    width:99%;
+    border-color:#9ecaed;
+    color:black;
+    font-size:20px;
+    font-family: 'Bubblegum Sans', cursive;
+    display:none;
+
+}
+
+ 
+#rv2{
+    background-color:black;
+    position:absolute ;
+    left:100px;
+    top:260px;
+    height:40px;
+    width:130px;
+    border-radius:10px;
+    border-color:#9ecaed;
+    outline-color:transparent;
+    color:#9ecaed;
+    font-size:20px;
+    text-align:center;
+    font-family: 'Bubblegum Sans', cursive;
+
+
+
+}
+#rv4{
+    background-color:black;
+    position:absolute ;
+    left:80px;
+    top:60px;
+    height:40px;
+    width:170px;
+    border-radius:10px;
+    border-color:#9ecaed;
+    outline-color:transparent;
+    color:#9ecaed;
+    font-size:20px;
+    text-align:center;
+    font-family: 'Bubblegum Sans', cursive;
+
+
+
+}
+
+#gen2{
+    background-color:black;
+    position:absolute ;
+    left:120px;
+    top:260px;
+    height:40px;
+    width:90px;
+    border-radius:10px;
+    border-color:#9ecaed;
+    outline-color:transparent;
+    color:#9ecaed;
+    font-size:20px;
+    font-family: 'Bubblegum Sans', cursive;
+
+
+}
+
+#namegr{
+    position:absolute ;
+    left:10px;
+    top:10px;
+    border-radius:10px;
+    border-color:#9ecaed;
+    outline-color:transparent;
+    color:black;
+    font-size:20px;
+    font-family: 'Bubblegum Sans', cursive;
+    display:none;
+
+}
+#starting{
+    position:absolute ;
+    right:10px;
+    top:10px;
+    border-radius:10px;
+    border-color:#9ecaed;
+    outline-color:transparent;
+    font-size:10px;
+    font-family: 'Bubblegum Sans', cursive;
+    display:none;
+    border-radius:10px;
+    border-color:black; 
+    background-color:#9ecaed;
+}
+#starting2{
+    position:absolute ;
+    right:10px;
+    top:10px;
+    border-radius:10px;
+    border-color:#9ecaed;
+    outline-color:transparent;
+    color:black;
+    font-size:10px;
+    font-family: 'Bubblegum Sans', cursive;
+    display:none;
+    border-radius:10px;
+    border-color:black; 
+    background-color:#9ecaed;
+}
+#starting3{
+    position:absolute ;
+    right:120px;
+    top:10px;
+    border-radius:10px;
+    border-color:#9ecaed;
+    outline-color:transparent;
+    color:black;
+    font-size:10px;
+    font-family: 'Bubblegum Sans', cursive;
+    display:none;
+    border-radius:10px;
+    border-color:black; 
+    background-color:#9ecaed;
+}
+
+
+#gen7{
+    background-color:black;
+    position:absolute ;
+    left:120px;
+    top:310px;
+    height:40px;
+    width:90px;
+    border-radius:10px;
+    border-color:#9ecaed;
+    outline-color:transparent;
+    color:#9ecaed;
+    font-size:20px;
+    font-family: 'Bubblegum Sans', cursive;
+
+
+}
+#gen10{
+    background-color:black;
+    position:absolute ;
+    left:120px;
+    top:430px;
+    height:40px;
+    width:90px;
+    border-radius:10px;
+    border-color:#9ecaed;
+    outline-color:transparent;
+    color:#9ecaed;
+    font-size:20px;
+    font-family: 'Bubblegum Sans', cursive;
+
+
+}
+#gen19{
+    background-color:black;
+    position:absolute ;
+    left:90px;
+    top:10px;
+    height:40px;
+    width:148px;
+    border-radius:10px;
+    border-color:#9ecaed;
+    outline-color:transparent;
+    color:#9ecaed;
+    font-size:20px;
+    font-family: 'Bubblegum Sans', cursive;
+    text-align:center;
+    transition:1s;
+
+
+}
+#sentmsg{
+    background-color:black;
+    position:absolute ;
+    left:0px;
+    bottom: 0;
+    height:30px;
+    width:75%;
+    border-radius:20px;
+    border-color:#9ecaed;
+    outline-color:transparent;
+    color:#9ecaed;
+    font-size:20px;
+    text-align:center;
+    transition:1s;
+    display: none;
+    font-family: 'Bubblegum Sans', cursive;
+
+}
+#sentmsg:focus { 
+    outline: none;
+    background-color:#0ff5ed;
+    border-color: #9ecaed;
+    box-shadow: 0 0 20px #9ecaed;
+    color:black;
+}
+
+#sentmsg2{
+    background-color:black;
+    position:absolute ;
+    left:0px;
+    bottom: 0;
+    height:30px;
+    width:75%;
+    border-radius:20px;
+    border-color:#9ecaed;
+    outline-color:transparent;
+    color:#9ecaed;
+    font-size:20px;
+    text-align:center;
+    transition:1s;
+    display: none;
+    font-family: 'Bubblegum Sans', cursive;
+
+ }
+#sentmsg2:focus { 
+    outline: none;
+    background-color:#0ff5ed;
+    border-color: #9ecaed;
+    box-shadow: 0 0 20px #9ecaed;
+    color:black;
+}
+
+
+#group2{
+    background-color:black;
+    position:absolute ;
+    opacity:0.5;
+    left:10%;
+    top:60px;
+    height:80%;
+    width:80%;
+    border-radius:20px;
+    border-color:#9ecaed;
+    outline-color:transparent;
+    color:#9ecaed;
+    font-size:13px;
+    transition:1s;
+    display: none;
+    font-family: 'Bubblegum Sans', cursive;
+
+}
+#group3{
+    background-color:#9ecaed;
+    position:absolute ;
+    opacity:1;
+    left:20%;
+    top:61px;
+    height:20%;
+    width:60%;
+    border-radius:0;
+    outline-color:transparent;
+    border-color:black;
+    color:black;
+    font-size:13px;
+    transition:1s;
+    display: none;
+    font-family: 'Bubblegum Sans', cursive;
+    text-align:center;
+
+}
+
+#group{
+    background-color:black;
+    position:absolute ;
+    opacity:0.5;
+    left:10%;
+    top:60px;
+    height:80%;
+    width:80%;
+    border-radius:20px;
+    border-color:#9ecaed;
+    outline-color:transparent;
+    color:#9ecaed;
+    font-size:13px;
+    transition:1s;
+    display: none;
+    font-family: 'Bubblegum Sans', cursive;
+
+}
+#send{
+    background-color:black;
+    position:absolute ;
+    right:4px;
+    bottom: 0;
+    height:35px;
+    width:20%;
+    border-radius:20px;
+    border-color:#9ecaed;
+    outline-color:transparent;
+    color:#9ecaed;
+    font-size:20px;
+    text-align:center;
+    transition:1s;
+    display: none;
+}
+#send2{
+    background-color:black;
+    position:absolute ;
+    right:4px;
+    bottom: 0;
+    height:35px;
+    width:20%;
+    border-radius:20px;
+    border-color:#9ecaed;
+    outline-color:transparent;
+    color:#9ecaed;
+    font-size:20px;
+    text-align:center;
+    transition:1s;
+    display: none;
+}
+
+#rv3{
+    background-color:black;
+    position:absolute ;
+    left:100px;
+    top:160px;
+    height:40px;
+    width:130px;
+    border-radius:10px;
+    border-color:#9ecaed;
+    outline-color:transparent;
+    color:#9ecaed;
+    font-size:20px;
+    font-family: 'Bubblegum Sans', cursive;
+    text-align:center;
+
+
+}
+#info1{
+    background-color:transparent;
+    position:absolute ;
+    left:100px;
+    top:140px;
+    height:40px;
+    width:130px;
+    border-radius:10px;
+    border-color:#9ecaed;
+    outline-color:transparent;
+    color:#9ecaed;
+    font-size:10px;
+    font-family: 'Bubblegum Sans', cursive;
+    text-align:center;
+
+
+}
+
+#join:focus { 
+    outline: none;
+    border-color: grey ;
+    box-shadow: 0 0 10px #9ecaed;
+    background-color: #cfed09;
+    color:black;
+}
+
+#create{
+    background-color:#9ecaed;
+    border-color:#9ecaed;
+    position:absolute ;
+    left:8px;
+    top:280px;
+    height:200px;
+    width:330px;
+    border-radius:10px;
+    outline-color:transparent;
+    font-size:30px;
+    font-family: 'Bubblegum Sans', cursive;
+
+
+}
+#create:focus { 
+    outline: none;
+    border-color: #9ecaed  ;
+    box-shadow: 0 0 10px #9ecaed;
+    background-color: #cfed09 ;
+    color: black ;
+}
+.slider {
+  -webkit-appearance: none;
+  width: 90%;
+  height: 15px;
+  border-radius: 5px;  
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%; 
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #cfed09 ;
+  cursor: pointer;
+}
+</style>
+    </head>
+    <body>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.22.0/firebase.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+     apiKey: "AIzaSyA3vurI-pASQxbofOIqGrc5f9j8tZg2nN4",
+    authDomain: "loging-7b6f9.firebaseapp.com",
+    databaseURL: "https://loging-7b6f9.firebaseio.com",
+    projectId: "loging-7b6f9",
+    storageBucket: "loging-7b6f9.appspot.com",
+    messagingSenderId: "852871001414",
+    appId: "1:852871001414:web:0d29c2bba0889bcf052147",
+    measurementId: "G-88SFTHRJQN"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<textarea id="group2" readonly></textarea>
+<textarea id="group3" readonly></textarea>
+<textarea id="group" readonly></textarea>
+    <div id="titlegr"></div> 
+    <div id="titlegr2"></div> 
+    <button onclick="start()" id="starting">Start Messaging</button>
+    <button onclick="visits()" id="starting3">Visit Log</button>
+       <button onclick="start2()" id="starting2">Start Messaging</button>  
+<p id="namegr">Group Name</p>
+    <input type = "text" id = "sentmsg" placeholer="Tap here for the message"/>
+    <input type = "text" id = "sentmsg2" placeholer="Tap here for the message"/>
+    <button id='send' onclick="send()"><img src="https://dl.dropbox.com/s/jrgksmhy6t3xbc4/images__1_-removebg-preview.png?raw=0" height='30px'width='30px'/></button>
+    <button id='send2' onclick="send2()"><img src="https://dl.dropbox.com/s/jrgksmhy6t3xbc4/images__1_-removebg-preview.png?raw=0" height='30px'width='30px'/></button>
+    <input  class="slider"type="range" min="1" max="10" id="rv"/>
+    <input class="slider" type="range" min="1" max="10" id="rv1"/>
+    <input placeholder="Enter charoom name" type="text" id="rv4"/>
+    <textarea  onclick="alet()"id="rv2" readonly>tag</textarea>
+    <button id="gen"onclick="generate()">Generate</button>
+    <input placeholder="YourName" type="text" id="gen19" />
+    <button id="gen7" onclick="copy()">Copy</button>
+    <button id="gen10" onclick="create2()">create</button>
+    <input placeholder="chatroom Id" type="text" id="rv3"/>
+    <p id="info1">must be Scrolled</p>
+    <button id="gen2"onclick="join2()" onclick="start2()">Join</button>
+    <div id="options"></div>
+    <button onclick="join()"id="join">Join to Room</button>
+    <button onclick="create()"id="create">Create a Room</button>
+    <p id="wel">Welcome to the service</p>
+    <script>
+var chetan=0
+    function join(){
+chetan+=100;
+     document.getElementById("join").style.display="none";
+        document.getElementById("options").style.display="none";
+        document.getElementById("create").style.display="none";
+        document.getElementById("wel").style.display="none";
+        document.getElementById("rv").style.display="none";
+        document.getElementById("rv1").style.display="none";
+        document.getElementById("rv2").style.display="none";
+        document.getElementById("rv4").style.display="none";
+        document.getElementById("gen").style.display="none";
+        document.getElementById("gen").style.display="none";
+        document.getElementById("gen10").style.display="none";
+  document.getElementById("gen7").style.display="none";
+  document.getElementById("info1").style.display="none";
+  document.getElementById("gen19").style.marginTop= chetan +"px";
+
+    }
+function create(){
+document.getElementById("rv3").style.display="none";
+document.getElementById("gen7").style.display="none";
+        document.getElementById("gen2").style.display="none";
+        document.getElementById("join").style.display="none";
+        document.getElementById("options").style.display="none";
+        document.getElementById("create").style.display="none";
+        document.getElementById("wel").style.display="none";
+    }
+function makeid() {
+    var d = document.getElementById("rv").value.length;
+  var text = "";
+  var possible = "ABCDEFabcdefghiHIjkJK";
+
+  for (var i = 0; i < 3; i++)
+    text += possible.charAt(Math.floor(Math.random() * possible.length));
+
+  return text;
+}
+
+var tie=0
+////.log(makeid());
+function generate(){
+
+document.getElementById("gen7").style.display="block";
+            var a = document.getElementById("rv").value;
+            
+            var b=document.getElementById("rv1").value; 
+            var c =a+b
+
+           ////.log(c)
+           var hah =c+makeid()+document.getElementById("rv4").value
+           var hah1=hah.replaceAll(" ","-")
+            document.getElementById("rv2").value=hah1
+
+            tie += 29
+            }
+function copy() {
+  var copyText = document.getElementById("rv2");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+  
+}
+function send(){
+var a = document.getElementById("rv").value;
+            
+var b=document.getElementById("rv1").value; 
+var chet= document.getElementById("rv2").value.replaceAll(" ","o")
+var username = document.getElementById("gen19").value
+
+var wordInput = document.getElementById("sentmsg").value;
+  wordInput = wordInput.toLowerCase();
+
+  // split the words by spaces (" ")
+  var arr = wordInput.split(" ");
+  // bad words to look for, keep this array in lowercase
+  var badWords = ["legos", "cloud", "manifold","bhikari","fuck","sex","chud","chudiya","sexy","matherchod","lowdu","bhadkhav","👙","xnxx","fucking","muthafucka","fucker","xxx","bikini","gay","gandu"];
+  
+ 
+  // .toLowerCase will do the case insensitive match!
+  var foundBadWords = arr.filter(el => badWords.includes(el));
+  var lenfb = foundBadWords.length
+
+ 
+
+ 
+console.log(foundBadWords) 
+ 
+
+    var username = document.getElementById("gen19").value
+if (lenfb==0){
+    var msg500 = document.getElementById("sentmsg").value
+}else{
+    msg500="message blocked due to badWords "
+}
+
+
+
+var msg="\n\n"+msg500+"\n from :"+username+"\n___________________________________"
+var db = firebase.database()
+
+
+db.ref("meda/"+chet+"/").push({
+
+
+
+
+    name:username,
+    message:msg,
+    
+    
+      
+    
+});
+document.getElementById("sentmsg").value=""
+
+}
+var bhau = 0
+function create2(){
+
+bhau = bhau + 1
+if(bhau==1){
+    alert("Create Button must be Clicked at least 8 times Only then Your Group is created else Not created..")
+}
+var msg = "Room created successfully.."
+var chet= document.getElementById("rv2").value
+var username = document.getElementById("gen19").value
+var db = firebase.database()
+
+
+db.ref("meada/"+chet+"/").push({
+
+
+
+
+    name:username,
+    message:msg,
+    
+    
+      
+    
+});
+
+var abhi = document.getElementById("rv4").value.length;
+var abhi2 = document.getElementById("gen19").value.length;
+////.log(abhi)
+var a = document.getElementById("rv").value;
+            
+            var b=document.getElementById("rv1").value; 
+            var c =a+b
+////.log(c)
+if (abhi>=5&&tie>=29&&c!=66&&abhi2>=2&&bhau>=8){ 
+ document.getElementById("rv").style.display="none";
+        document.getElementById("rv1").style.display="none";
+        document.getElementById("rv2").style.display="none";
+        document.getElementById("rv4").style.display="none";
+        document.getElementById("gen").style.display="none";
+        document.getElementById("gen10").style.display="none";
+  document.getElementById("gen7").style.display="none";
+  document.getElementById("info1").style.display="none";
+  document.getElementById("gen19").style.display="none";
+ 
+document.getElementById("starting3").style.display="none";
+          
+ document.getElementById("sentmsg").style.display="block";
+document.getElementById("titlegr").style.display="block";          
+document.getElementById("starting").style.display="block"; 
+ document.getElementById("send").style.display="block"; 
+ document.getElementById("namegr").style.display="block"; 
+ document.getElementById("group").style.display="block"; 
+ document.getElementById("namegr").innerHTML=document.getElementById("rv4").value;
+document.body.style.backgroundImage="url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRmS0eQ9KHrSUc6AhvR4-6c8ezc2qG0tpJcMQ&usqp=CAU)"
+      
+  }else{
+  if (abhi<=4){
+      alert("Make sure Your room name is atleast of 5 char")
+      }else if (tie<=28){
+      alert("make sure You have generated  the tag and clicked on copy..")
+      }else if(abhi2<=1){
+          alert("check Your name pls..")
+      }else if(bhau<9){
+      ////.log("click 7-8 Times.")
+      }else{
+     alert("Scrollers Must Be scrolled")
+      document.getElementById("rv2").value=""
+      document.getElementById("gen7").style.display="none"
+      tie=0
+      }
+      }
+
+}
+
+function alet(){
+    alert("Tap generate first and Tags are generated automatically you have to just adjust scroller")    
+}
+function start(){
+var chet=document.getElementById("rv2").value
+document.getElementById("starting").style.display="none";
+db=firebase.database()
+    db.ref("meda/"+chet+"/").on('child_added',function(snapshot){
+
+        var frommsg=snapshot.val().message
+        
+         document.getElementById("group").append(frommsg+"\n")
+         
+         })
+
+}
+function join2(){
+alert("click on the \"start messaging\"button at right corner to start chatting...")
+    var baku = document.getElementById("gen19").value.length
+    var baku2 = document.getElementById("rv3").value.length
+    if (baku>=2&&baku2>=4){
+        document.getElementById("gen19").style.display="none"
+        document.getElementById("rv3").style.display="none"
+        document.getElementById("gen2").style.display="none"
+        document.getElementById("group2").style.display="block"
+        document.getElementById("namegr").style.display="block"
+document.getElementById("namegr").innerHTML="Messenger"        
+        document.getElementById("titlegr").style.display="block"
+document.getElementById("starting3").style.display="block"  
+       document.getElementById("titlegr2").style.display="block"
+         
+document.getElementById("starting2").style.display="block";  
+document.getElementById("send2").style.display="block";  
+document.getElementById("sentmsg2").style.display="block";           
+ document.body.style.backgroundImage="url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRmS0eQ9KHrSUc6AhvR4-6c8ezc2qG0tpJcMQ&usqp=CAU)"
+    }else{
+        if(baku<=1){
+            alert("Name is too short")
+        }else{
+            alert("Invalid chat room ID")
+        }
+    }
+}
+function start2(){
+document.getElementById("starting2").style.display="none"
+var db = firebase.database()
+    var dce = document.getElementById("rv3").value
+db.ref("meda/"+dce+"/").on('child_added',function(snapshot){
+
+        var frommsg=snapshot.val().message
+        
+         document.getElementById("group2").append(frommsg+"\n")
+         
+         })
+
+}
+function send2(){
+ var wordInput = document.getElementById("sentmsg2").value;
+  wordInput = wordInput.toLowerCase();
+
+  // split the words by spaces (" ")
+  var arr = wordInput.split(" ");
+  // bad words to look for, keep this array in lowercase
+  var badWords = ["legos", "cloud", "manifold","bhikari","fuck","sex","chud","chudiya","sexy","matherchod","lowdu","bhadkhav","👙","xnxx","fucking","muthafucka","fucker","xxx","bikini","gay","gandu"];
+  
+ 
+  // .toLowerCase will do the case insensitive match!
+  var foundBadWords = arr.filter(el => badWords.includes(el));
+  var lenfb = foundBadWords.length
+
+ 
+
+ 
+console.log(foundBadWords) 
+var username  = document.getElementById("gen19").value
+
+if (lenfb==0){
+    var msg500 = document.getElementById("sentmsg2").value
+}else{
+    msg500="message blocked due to badWords "
+}
+var msg="\n\n"+msg500+"\n from:"+username+"\n\n___________________________________"
+
+
+var dce = document.getElementById("rv3").value 
+ 
+var db = firebase.database()
+
+var username = document.getElementById("gen19").value
+
+db.ref("meda/"+dce+"/").push({
+
+
+
+
+    name:username,
+    message:msg,
+    
+    
+      
+    
+});
+document.getElementById("sentmsg2").value=""
+}
+
+var x7 = 0
+function visits(){
+x7=x7+1
+if (x7%2!=0){
+   document.getElementById("group3").style.display="block" 
+}else{
+   document.getElementById("group3").style.display="none" 
+}
+if (x7==1){
+var db = firebase.database()
+    var dce = document.getElementById("rv3").value
+    
+db.ref("meda/"+dce+"/").on('child_added',function(snapshot){
+
+        var visitors=snapshot.val().name
+        
+        document.getElementById("group3").append(visitors+"\n")
+         })
+}
+    
+}
+         
+
+        
+    </script>
+       <script>
+           alert("1.select Join or create \n 2.if you have created chatRoom then tap on create button at least 8 times so your room should be created \n 3.after Entering in room tap on start messaging to enable messaging for room..")
+alert("Thanks to \n ayush singh \n sobirav\nprasant\n tanay aka dragon")
+function join2(){
+alert("click on the \"start messaging\"button at right corner to start chatting...")
+    var baku = document.getElementById("gen19").value.length
+    var baku2 = document.getElementById("rv3").value.length
+    if (baku>=2&&baku2>=4){
+        document.getElementById("gen19").style.display="none"
+        document.getElementById("rv3").style.display="none"
+        document.getElementById("gen2").style.display="none"
+        document.getElementById("group2").style.display="block"
+        document.getElementById("namegr").style.display="block"
+document.getElementById("namegr").innerHTML="Messenger"        
+        document.getElementById("titlegr").style.display="block"
+document.getElementById("starting3").style.display="block"  
+       document.getElementById("titlegr2").style.display="block"
+         
+document.getElementById("starting2").style.display="none";  
+document.getElementById("send2").style.display="block";  
+document.getElementById("sentmsg2").style.display="block";           
+ document.body.style.backgroundImage="url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRmS0eQ9KHrSUc6AhvR4-6c8ezc2qG0tpJcMQ&usqp=CAU)"
+    }else{
+        if(baku<=1){
+            alert("Name is too short")
+        }else{
+            alert("Invalid chat room ID")
+        }
+    }
+}
+function start2(){
+document.getElementById("starting2").style.display="none"
+var db = firebase.database()
+    var dce = document.getElementById("rv3").value
+db.ref("meda/"+dce+"/").on('child_added',function(snapshot){
+
+        var frommsg=snapshot.val().message
+        
+         document.getElementById("group2").append(frommsg+"\n")
+         
+         })
+
+}
+function send2(){
+ var wordInput = document.getElementById("sentmsg2").value;
+  wordInput = wordInput.toLowerCase();
+
+  // split the words by spaces (" ")
+  var arr = wordInput.split(" ");
+  // bad words to look for, keep this array in lowercase
+  var badWords = ["legos", "cloud", "manifold","bhikari","fuck","sex","chud","chudiya","sexy","matherchod","lowdu","bhadkhav","👙","xnxx","fucking","muthafucka","fucker","xxx","bikini","gay","gandu","chutiya","fucker","fucking","fucking"];
+  
+ 
+  // .toLowerCase will do the case insensitive match!
+  var foundBadWords = arr.filter(el => badWords.includes(el));
+  var lenfb = foundBadWords.length
+
+ 
+
+ 
+console.log(foundBadWords) 
+var username  = document.getElementById("gen19").value
+
+if (lenfb==0){
+    var msg500 = document.getElementById("sentmsg2").value
+}else{
+    msg500="message blocked due to badWords "
+}
+var msg="\n\n"+msg500+"\n\n from:"+username+"\n___________________________________"
+
+
+var dce = document.getElementById("rv3").value 
+ 
+var db = firebase.database()
+
+var username = document.getElementById("gen19").value
+
+db.ref("meda/"+dce+"/").push({
+
+
+
+
+    name:username,
+    message:msg,
+    
+    
+      
+    
+});
+document.getElementById("sentmsg2").value=""
+}
+
+var x7 = 0
+function visits(){
+x7=x7+1
+if (x7%2!=0){
+   document.getElementById("group3").style.display="block" 
+}else{
+   document.getElementById("group3").style.display="none" 
+}
+if (x7==1){
+var db = firebase.database()
+    var dce = document.getElementById("rv3").value
+    
+db.ref("meda/"+dce+"/").on('child_added',function(snapshot){
+
+        var visitors=snapshot.val().name
+        
+        document.getElementById("group3").append(visitors+"\n")
+         })
+}
+    
+}
+
+       </script>
+    </body>
+</html>
